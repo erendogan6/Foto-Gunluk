@@ -22,6 +22,12 @@ Bu proje, Kotlin programlama dili kullanılarak geliştirilmiş bir Android uygu
 - UI/UX Tasarım
 - Permissions
 
+## Test Edilen Sürümler
+- Android 8.0
+- Android 13.0
+- Android 14.0
+
+
 ## Nasıl Kullanılır?
 
 1. Uygulamayı İndirin ve Kurun: Uygulamayı yüklemek için kaynak kodları derleyebilirsiniz veya doğrudan Foto Günlük.apk dosyası ile indirip, kurabilirsiniz.
