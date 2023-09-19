@@ -84,6 +84,9 @@ class Detay : AppCompatActivity() {
                         } else {
                             MediaStore.Images.Media.getBitmap(this@Detay.contentResolver,result.data!!.data)
                         }
+                        val scaleFactor = 0.5f
+
+                        bitmap = Bitmap.createScaledBitmap(bitmap,((bitmap.getWidth() * scaleFactor).toInt()),((bitmap.getHeight() * scaleFactor).toInt()),false)
                         isPicture = 1
                         binding.imageView2.setImageBitmap(bitmap)
 
@@ -127,7 +130,7 @@ class Detay : AppCompatActivity() {
         }
 
         val outputStream = ByteArrayOutputStream()
-        bitmap.compress(Bitmap.CompressFormat.PNG,100,outputStream)
+        bitmap.compress(Bitmap.CompressFormat.JPEG,50,outputStream)
         val byteArray = outputStream.toByteArray()
 
         try {
